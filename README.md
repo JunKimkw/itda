@@ -7,7 +7,7 @@
 Built at the **2026 KW Hackathon** (Team 10 · 컴미컴) for Wolgye 1-dong, Nowon-gu, Seoul, and demoed live at the hackathon exhibition (Oct 13, 2026). Visitors scanned a QR code on our poster and tried the app right there on their phones.
 
 **🔗 Live app:** https://itda-kappa.vercel.app (tap **"베타 테스터로 체험하기"** to try every feature without signing up)
-**📦 Team repository:** [2026-KW-HACKATHON/10_Commicom](https://github.com/2026-KW-HACKATHON/10_Commicom)
+**📦 Source code:** this repository — the full team codebase with its complete commit history, preserved from the original team repository (`2026-KW-HACKATHON/10_Commicom`)
 
 ---
 
@@ -20,6 +20,17 @@ Built at the **2026 KW Hackathon** (Team 10 · 컴미컴) for Wolgye 1-dong, Now
 | Mascot promo post | Owner home | AI post creation | Coupon settlement |
 | :---: | :---: | :---: | :---: |
 | <img src="screenshots/10-mascot-post.jpg" width="200"> | <img src="screenshots/07-owner-home.jpg" width="200"> | <img src="screenshots/08-owner-create.jpg" width="200"> | <img src="screenshots/09-owner-settlement.jpg" width="200"> |
+
+---
+
+## 📁 Repository Layout
+
+| Path | What's inside |
+| --- | --- |
+| [`client/`](client) | React + TypeScript mobile web app (customer, owner and admin screens, mock API for beta mode) |
+| [`server/`](server) | Spring Boot API server ([API spec](server/docs/api-spec.md), production SQL migrations in [`server/docs/sql/`](server/docs/sql)) |
+| [`.github/workflows/`](.github/workflows) | CI/CD: client → Vercel, server → EC2 with rollback |
+| [`docs/`](docs) | Original team README and the hackathon presentation files |
 
 ---
 

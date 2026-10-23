@@ -7,7 +7,7 @@
 **2026 KW 해커톤**(10조 · 컴미컴)에서 서울 노원구 월계1동을 대상으로 만들었고, 해커톤 전시회(2026년 10월 13일)에서 실시간으로 시연했습니다. 관람객은 포스터의 QR 코드를 찍고 그 자리에서 휴대폰으로 앱을 써 봤습니다.
 
 **🔗 체험하기:** https://itda-kappa.vercel.app (**"베타 테스터로 체험하기"**를 누르면 가입 없이 모든 기능을 써 볼 수 있어요)
-**📦 팀 저장소:** [2026-KW-HACKATHON/10_Commicom](https://github.com/2026-KW-HACKATHON/10_Commicom)
+**📦 소스 코드:** 이 저장소 — 원래 팀 저장소(`2026-KW-HACKATHON/10_Commicom`)의 전체 코드를 커밋 기록까지 그대로 옮겨 왔어요
 
 ---
 
@@ -20,6 +20,17 @@
 | 마스코트 홍보 게시물 | 사장님 홈 | AI 게시물 제작 | 쿠폰 정산 |
 | :---: | :---: | :---: | :---: |
 | <img src="screenshots/10-mascot-post.jpg" width="200"> | <img src="screenshots/07-owner-home.jpg" width="200"> | <img src="screenshots/08-owner-create.jpg" width="200"> | <img src="screenshots/09-owner-settlement.jpg" width="200"> |
+
+---
+
+## 📁 저장소 구성
+
+| 경로 | 내용 |
+| --- | --- |
+| [`client/`](client) | React + TypeScript 모바일 웹앱 (손님·사장님·관리자 화면, 베타 모드용 목업 API) |
+| [`server/`](server) | Spring Boot API 서버 ([API 명세](server/docs/api-spec.md), 운영 DB SQL은 [`server/docs/sql/`](server/docs/sql)) |
+| [`.github/workflows/`](.github/workflows) | 자동 배포: 클라이언트 → Vercel, 서버 → EC2 (실패 시 롤백) |
+| [`docs/`](docs) | 팀 원본 README와 해커톤 발표 자료 |
 
 ---
 
