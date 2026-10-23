@@ -1,5 +1,7 @@
 # 🕊️ Itda (잇다) — Connecting a Neighborhood's Small Shops and Residents
 
+**English** | [한국어](README.ko.md)
+
 > A mobile web app that turns one photo into an AI promo post for a local shop, puts every shop on a live neighborhood map, and rewards residents for actually walking in.
 
 Built at the **2026 KW Hackathon** (Team 10 · 컴미컴) for Wolgye 1-dong, Nowon-gu, Seoul, and demoed live at the hackathon exhibition (Oct 13, 2026). Visitors scanned a QR code on our poster and tried the app right there on their phones.
